@@ -1,0 +1,7 @@
+------------------------------------
+    Etapa 1:
+
+En la etapa 1 no utilice IA, fue el inicio del proyecto base con la
+instalación de React, npm, vite y agregando GitHub y Git para
+el guardado de este repositorio y el inicio de los commit.
+------------------------------------
