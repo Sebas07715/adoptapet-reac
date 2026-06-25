@@ -20,3 +20,14 @@ puedo agregar alguna corección si es necesaria con relación
 a si se importa correctamente a los otros archivos.
 
 -----------------------------------------
+
+Etapa 3: Lista de Mascotas
+
+promtp: En este archivo que esta ubicado en components/ListaMascotas.jsx que reciba el arrays de mascotas por props del archivo que esta ubicado en este mismo apartado de MascotaCarr,
+ en lo cual recorre el array con .map() y renderiza un mascotaCard por cada mascota 
+
+Sugerencia: parcialmente util
+
+Modificación IA: los import no los ubicaba correctamente en
+algunos de los archivos que me creaba y tenia que agregar
+correctamente su sintaxis por ejem: (import components/MascotaCard)
