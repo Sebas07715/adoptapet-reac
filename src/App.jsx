@@ -4,11 +4,11 @@ import viteLogo from './assets/vite.svg';
 import heroImg from './assets/hero.png';
 import 'src/App.css';
 import ListaMascotas from 'src/components/ListaMascotas';
-import FiltroEspecie from './components/FiltroEspecie';
+import FiltroEspecie from 'src/components/FiltroEspecie';
 import mascotas from 'src/data/mascotas'; // Importa el array de datos de mascotas
 
 function App() {
-  const [filtroEspecie, setFiltroEspecie] = useState('Todas');
+  const [filtroEspecie, setFiltroEspecSie] = useState('Todas');
   const [busqueda, setBusqueda] = useState('');
 
   // Filtra las mascotas según la especie y el nombre
