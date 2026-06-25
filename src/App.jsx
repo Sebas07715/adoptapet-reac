@@ -4,10 +4,20 @@ import viteLogo from './assets/vite.svg';
 import heroImg from './assets/hero.png';
 import 'src/App.css';
 import ListaMascotas from 'src/components/ListaMascotas';
+import FiltroEspecie from './components/FiltroEspecie';
 import mascotas from 'src/data/mascotas'; // Importa el array de datos de mascotas
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [filtroEspecie, setFiltroEspecie] = useState('Todas');
+  const [busqueda, setBusqueda] = useState('');
+
+  // Filtra las mascotas según la especie y el nombre
+  const mascotasFiltradas = mascotas.filter((mascota) => {
+    const coincideEspecie =
+      filtroEspecie === 'Todas' || mascota.especie.toLowerCase() === filtroEspecie.toLowerCase();
+    const coincideBusqueda = mascota.nombre.toLowerCase().includes(busqueda.toLowerCase().trim());
+    return coincideEspecie && coincideBusqueda;
+  });
 
   return (
     <>
@@ -23,25 +33,26 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
-      <div className="ticks"></div>
+      <section id="filtros">
+        <h2>Filtrar Mascotas</h2>
+        <FiltroEspecie
+          filtroEspecie={filtroEspecie}
+          setFiltroEspecie={setFiltroEspecie}
+          busqueda={busqueda}
+          setBusqueda={setBusqueda}
+        />
+      </section>
 
-      {/* Renderiza el componente ListaMascotas con los datos de mascotas */}
       <section id="lista-mascotas">
         <h2>Lista de Mascotas</h2>
-        <ListaMascotas mascotas={mascotas} />
+        {mascotasFiltradas.length > 0 ? (
+          <ListaMascotas mascotas={mascotasFiltradas} />
+        ) : (
+          <p>No hay mascotas que coincidan</p>
+        )}
       </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
     </>
   );
 }

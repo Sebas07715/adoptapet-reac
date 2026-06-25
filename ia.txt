@@ -31,3 +31,19 @@ Sugerencia: parcialmente util
 Modificación IA: los import no los ubicaba correctamente en
 algunos de los archivos que me creaba y tenia que agregar
 correctamente su sintaxis por ejem: (import components/MascotaCard)
+
+----------------------------
+
+Etapa 4: Estado y Filtro Seguro.
+
+Promtp: En este apartado crea con botones o un selector para filtrar especies por la especie : "Todas", "Perro", "Gato","Otro", 
+en lo cual en App.jsx usa UseState para guardar el filtro seleccionado y un campo de busqueda por nombre, Aplica ambos filtros
+ sobre el array antes de pasarlo a ListaMascotas, en lo cual usa renderizado condicional para mostrar el mensaje "No hay mascotas 
+ que coincidan" en el caso que el resultado quede vacio, evita redundancia, en lo cual el campo de busqueda debe ser un componente 
+ controlado (su valor vive en el estado de React) y valida, normalzia el texto de busqueda (recorta espacios y limita el largo) 
+ antes de usarlo, para no confiar ciegamente en la entrada del usuario.
+
+ Sugerencia: Util ya que genero correctamente lo que pedi, en lo cual en este apartado se crea el FiltroEspecie en components.
+
+ Correcion IA: Lo mismo que lo anterior en import tuve que añadir el src o en este caso el /components/
+
