@@ -47,3 +47,13 @@ en lo cual en App.jsx usa UseState para guardar el filtro seleccionado y un camp
 
  Correcion IA: Lo mismo que lo anterior en import tuve que añadir el src o en este caso el /components/
 
+--------------------------
+
+Etapa 5: Destacar las adopciones urgentes
+
+Promtp: estos estan ubicados en src/app.jsx por eso esta generando ese error, por ultimo resalta visualmente los elementos con adopciónUrgente: true (una etiqueta que lleve 
+"Urgente o un borde distinto"), agregar un contador que muestre cuantas mascotas tienen adopcion urgente y por ultimo verifica que toda la app corre sin erorres ni warnings en la consola. evita dar
+ explicaciones solo el codigo necesario
+
+ Sugerencias: Muy util ya que verifico por ultimo los problemas que presentaba
+ mis archivos, en lo cual me generaba error en los import que finalmente corregi
