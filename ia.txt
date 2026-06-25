@@ -5,3 +5,18 @@ En la etapa 1 no utilice IA, fue el inicio del proyecto base con la
 instalación de React, npm, vite y agregando GitHub y Git para
 el guardado de este repositorio y el inicio de los commit.
 ------------------------------------
+
+Etapa 2:
+Promtp utilizado: En MascotaCard.js el componente recibe por props: nombre, raza, edad, especie, descripcion, caracteristicas, en lo cual muestra la información de forma visual y ordenada, aplica un estilo
+ diferenciado según corresponda la especie (ejem: un color/etiqueta distinto para Perro, Gato y asi etc..) evita explicar el paso a paso solo requiero el codigo, y define los tipos de las props con PropTypes (o documentar cada prop claramente) y que entregue valores por
+  defecto para evitar errores cuando falte un dato, renderizar el texto siempre como contenido jsx normal, no usar dangerouslySetlnnerHTML y no dejar credenciales, claves ni datos sensibles escritos en el codigo.
+
+Sugerencia: fue util ya que me realizo el codigo
+con las caracteristicas justas y necesarias para 
+el componente de MascotaCard (jsx)
+
+Coreccion a la IA: No genero ningun error, pero posteriormente
+puedo agregar alguna corección si es necesaria con relación
+a si se importa correctamente a los otros archivos.
+
+-----------------------------------------
